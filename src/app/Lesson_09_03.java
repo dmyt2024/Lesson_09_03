@@ -72,11 +72,12 @@ public class Lesson_09_03 {
             int sumCols = 0;
             for (int i = 0; i < array2d.length; i++) {
                 sumCols += array2d[i][j];
-                if (sumCols != mag) {
-                    eqD = false;
-                    break;
-                }
             }
+            if (sumCols != mag) {
+                eqD = false;
+                break;
+            }
+
         }
         if (!eqD) {
             System.out.println("Матриця не є магічним квадратом");
